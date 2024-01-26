@@ -51,7 +51,7 @@ When you get there, you see your {SO} already sitting down in the corner you two
 
 Your {SO} asks you how you are, and the two of you chit-chat a bit idly. You feel your heart stuck in your throat, as your mind swirls with what they could want to talk about.
 
-* [\[Valentine's day plans?\]]
+* [\[Valentine's Day plans?\]]
 * [\[Is something wrong?\]]
 * [\[A sudden trip to Japan?\]]
 * [\[Is something wrong?\]]
