@@ -27,7 +27,7 @@ Boyfriend, girlfriend, or partner?
 
 February: 0 months
 
-A couple days before your 2 year anniversary, which just so happens to be Valentine's day, your {SO} texts you asking to talk.
+A couple days before your 2 year anniversary, which just so happens to be Valentine's Day, your {SO} texts you, asking to talk.
 
 Your mind races with what that could mean, but you text back:
 
@@ -49,7 +49,7 @@ When you get there, you see your {SO} already sitting down in the corner you two
 
 === break_up ===
 
-Your {SO} asks you how you're are, and the two of you chit-chat a bit idly. You feel your heart stuck in your throat, as your mind swirls with what they could want to talk about.
+Your {SO} asks you how you are, and the two of you chit-chat a bit idly. You feel your heart stuck in your throat, as your mind swirls with what they could want to talk about.
 
 * [\[Valentine's day plans?\]]
 * [\[Is something wrong?\]]
