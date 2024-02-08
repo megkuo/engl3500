@@ -1,22 +1,128 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0gcg0ui6rith"]
+[gd_scene load_steps=17 format=3 uid="uid://d0gcg0ui6rith"]
 
-[ext_resource type="Texture2D" uid="uid://dp2d6sdonejoe" path="res://icon.svg" id="1_febcl"]
+[ext_resource type="Texture2D" uid="uid://cwcpg318biglq" path="res://images/pasanek2.png" id="1_c6chc"]
 [ext_resource type="Script" path="res://scripts/new_script.gd" id="2_x3h15"]
+[ext_resource type="Script" path="res://scenes/comet.gd" id="3_8gl2x"]
+[ext_resource type="Texture2D" uid="uid://dk83abxsl5pft" path="res://images/fire.png" id="3_68wry"]
+[ext_resource type="Texture2D" uid="uid://blmjp84nofuwd" path="res://images/bloomfield2.png" id="3_83r5e"]
+[ext_resource type="Script" path="res://scenes/Fire.gd" id="4_e0yjh"]
+[ext_resource type="Texture2D" uid="uid://ctfkr65k41sn4" path="res://images/pettit2.png" id="5_ifa8y"]
+[ext_resource type="Texture2D" uid="uid://bpm0lmmo8gjkn" path="res://images/orebaugh2.png" id="5_vvgk4"]
+[ext_resource type="Texture2D" uid="uid://bbytqhais64ll" path="res://images/upsorn2.png" id="6_prx5u"]
+[ext_resource type="Texture2D" uid="uid://lgrjpah8li5d" path="res://images/floryan2.png" id="8_52emr"]
+[ext_resource type="Texture2D" uid="uid://byff5iywym1vq" path="res://images/ducky.png" id="9_ce4ri"]
+[ext_resource type="Texture2D" uid="uid://d4lybjvlvgbd" path="res://images/morrison2.png" id="10_s072w"]
+[ext_resource type="Texture2D" uid="uid://dbe5v6vsv66ur" path="res://images/cookie.png" id="10_yna32"]
+[ext_resource type="Texture2D" uid="uid://8nrhsr5a3lel" path="res://images/sherriff2.png" id="12_bcevn"]
+[ext_resource type="Texture2D" uid="uid://cdposudxpjlfo" path="res://images/hott2.png" id="14_auta8"]
+[ext_resource type="Texture2D" uid="uid://dvc3vh37qimsq" path="res://images/space_bg.jpg" id="16_v6rjv"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="COMET" type="Sprite2D" parent="Node2D"]
+position = Vector2(535, 682)
+scale = Vector2(0.0986111, 0.0927083)
+texture = ExtResource("1_c6chc")
+script = ExtResource("3_8gl2x")
+x_speed = 150.0
+y_speed = -50.0
+
+[node name="Node2D" type="Node2D" parent="Node2D/COMET"]
+
+[node name="Fire" type="Sprite2D" parent="Node2D/COMET/Node2D"]
+position = Vector2(-243.381, 366.742)
+rotation = -0.23911
+scale = Vector2(1.1307, 1.24332)
+texture = ExtResource("3_68wry")
+script = ExtResource("4_e0yjh")
+
+[node name="bloomsun" type="Sprite2D" parent="."]
+position = Vector2(580.075, 315)
+scale = Vector2(0.249791, 0.247222)
+texture = ExtResource("3_83r5e")
 script = ExtResource("2_x3h15")
 rotation_speed = 0.001
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(584, 304)
-scale = Vector2(2.125, 1.99219)
-texture = ExtResource("1_febcl")
+[node name="Node2D2" type="Node2D" parent="bloomsun"]
+position = Vector2(50.7047, 25.4247)
+scale = Vector2(6.51866, 6.44306)
+script = ExtResource("2_x3h15")
+rotation_speed = 0.001
+
+[node name="orebaugh" type="Sprite2D" parent="bloomsun/Node2D2"]
+position = Vector2(-284.951, -153.721)
+scale = Vector2(0.380399, 0.406056)
+texture = ExtResource("5_vvgk4")
 script = ExtResource("2_x3h15")
 rotation_speed = 0.01
 
-[node name="Icon2" type="Sprite2D" parent="Icon"]
-position = Vector2(94.5882, -119.467)
-scale = Vector2(0.708333, 0.703266)
-texture = ExtResource("1_febcl")
+[node name="upsorn" type="Sprite2D" parent="bloomsun/Node2D2"]
+position = Vector2(5.0723, 151.12)
+scale = Vector2(0.350106, 0.363661)
+texture = ExtResource("6_prx5u")
+script = ExtResource("2_x3h15")
+rotation_speed = 0.03
+
+[node name="rubber duck" type="Sprite2D" parent="bloomsun/Node2D2/upsorn"]
+position = Vector2(67.6694, -44.7293)
+scale = Vector2(0.0386224, 0.0352405)
+texture = ExtResource("9_ce4ri")
 script = ExtResource("2_x3h15")
 rotation_speed = -0.05
+
+[node name="cookie" type="Sprite2D" parent="bloomsun/Node2D2/upsorn"]
+position = Vector2(-88.1752, 71.1604)
+scale = Vector2(0.0783396, 0.0710131)
+texture = ExtResource("10_yna32")
+script = ExtResource("2_x3h15")
+rotation_speed = -0.05
+
+[node name="floryan" type="Sprite2D" parent="bloomsun/Node2D2"]
+position = Vector2(-105.47, 11.1602)
+scale = Vector2(0.0430094, 0.0484532)
+texture = ExtResource("8_52emr")
+script = ExtResource("2_x3h15")
+rotation_speed = 0.034
+
+[node name="snes" type="Sprite2D" parent="bloomsun/Node2D2/floryan"]
+position = Vector2(86.4291, -612.456)
+scale = Vector2(0.687267, 0.514407)
+texture = ExtResource("12_bcevn")
+script = ExtResource("2_x3h15")
+rotation_speed = -0.05
+
+[node name="pettit" type="Sprite2D" parent="bloomsun/Node2D2"]
+position = Vector2(228.004, -131.389)
+scale = Vector2(0.147126, 0.162018)
+texture = ExtResource("5_ifa8y")
+script = ExtResource("2_x3h15")
+rotation_speed = 0.01
+
+[node name="lava lamp" type="Sprite2D" parent="bloomsun/Node2D2/pettit"]
+position = Vector2(269.857, -67.6721)
+scale = Vector2(1.31595, 1.29655)
+texture = ExtResource("14_auta8")
+script = ExtResource("2_x3h15")
+rotation_speed = -0.05
+
+[node name="morrison" type="Sprite2D" parent="bloomsun/Node2D2"]
+position = Vector2(101.492, 44.3944)
+scale = Vector2(0.19007, 0.210998)
+texture = ExtResource("10_s072w")
+script = ExtResource("2_x3h15")
+rotation_speed = 0.02
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("16_v6rjv")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(716, -3)
+texture = ExtResource("16_v6rjv")
+centered = false
