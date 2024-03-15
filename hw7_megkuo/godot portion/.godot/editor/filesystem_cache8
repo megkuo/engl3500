@@ -1,29 +1,29 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709319220
-demo_scene_class.tscn::PackedScene::3950025353887902339::1709262279::0::1::::<><>::res://Scripts/BadCoupledScriptDontUse.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/ShowHide.gd<>res://Scripts/CharacterMovement.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg<>res://Scripts/CollisionController.gd<>uid://c5s3a28nqkban::::res://Art/sonic-transparent.png<>res://Scripts/rotate.gd
+::res://::1710527453
+demo_scene_class.tscn::PackedScene::3950025353887902339::1709319233::0::1::::<><>::res://Scripts/BadCoupledScriptDontUse.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/ShowHide.gd<>res://Scripts/CharacterMovement.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg<>res://Scripts/CollisionController.gd<>uid://c5s3a28nqkban::::res://Art/sonic-transparent.png<>res://Scripts/rotate.gd
 demo_scene_complete.tscn::PackedScene::7411730775520367512::1709260058::0::1::::<><>::res://Scripts/BadCoupledScriptDontUse.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/ShowHide.gd<>res://Scripts/CharacterMovement.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg<>res://Scripts/CollisionController.gd<>uid://c5s3a28nqkban::::res://Art/sonic-transparent.png<>res://Scripts/rotate.gd
-homework_scene_four.tscn::PackedScene::791585469340075705::1709262306::0::1::::<><>::uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/Scripts Only for Homework Exercises/ShowHide_HW_four.gd<>res://Scripts/CharacterMovement.gd<>res://Scripts/Scripts Only for Homework Exercises/CollisionController_HW_four.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg
+homework_scene_four.tscn::PackedScene::791585469340075705::1709319233::0::1::::<><>::uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/Scripts Only for Homework Exercises/ShowHide_HW_four.gd<>res://Scripts/CharacterMovement.gd<>res://Scripts/Scripts Only for Homework Exercises/CollisionController_HW_four.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg
 homework_scene_one.tscn::PackedScene::3116582954244833314::1709262231::0::1::::<><>::res://Scripts/Scripts Only for Homework Exercises/rotate_for_HW_scene_one.gd<>uid://c5s3a28nqkban::::res://Art/sonic-transparent.png
 homework_scene_three.tscn::PackedScene::3299919672505902337::1709262265::0::1::::<><>::res://Scripts/CharacterMovement.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg<>uid://c5s3a28nqkban::::res://Art/sonic-transparent.png<>res://Scripts/Scripts Only for Homework Exercises/rotate_for_HW_scene_three.gd
 homework_scene_two.tscn::PackedScene::8507567364864310517::1709262232::0::1::::<><>::uid://c5s3a28nqkban::::res://Art/sonic-transparent.png<>res://Scripts/CharacterMovement.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg<>res://Scripts/Scripts Only for Homework Exercises/rotate_for_HW_scene_two.gd
 new_canvas_item_material.tres::CanvasItemMaterial::4961694064581367806::1709259244::0::1::::<><>::
 new_shader_material.gdshader::Shader::-1::1709259244::0::1::::<><>::
 new_shader_material.tres::ShaderMaterial::3794111459005353273::1709259244::0::1::::<><>::
-::res://Art/::1709259432
+::res://Art/::1709319221
 icon.svg::CompressedTexture2D::7786265186431896202::1709259244::1709319221::1::::<><>::
 sonic-transparent.png::CompressedTexture2D::6917367021619146305::1709259244::1709319221::1::::<><>::
-::res://Art/TileMap_SF/::1709259432
+::res://Art/TileMap_SF/::1709319221
 tileset_sf.png::CompressedTexture2D::2547015647495620089::1709259244::1709319221::1::::<><>::
-::res://Art/TileMap_SF/Grafika/::1709259432
+::res://Art/TileMap_SF/Grafika/::1709319221
 bg2.png::CompressedTexture2D::8605611883768384828::1709259244::1709319221::1::::<><>::
 bg.png::CompressedTexture2D::3289265589880473385::1709259244::1709319221::1::::<><>::
 tr.png::CompressedTexture2D::2741870702809891031::1709259244::1709319221::1::::<><>::
-::res://Art/TileMap_SF/Grafika/button/::1709259432
+::res://Art/TileMap_SF/Grafika/button/::1709319221
 B_empty.png::CompressedTexture2D::716727376313110443::1709259244::1709319221::1::::<><>::
 B_modulate.png::CompressedTexture2D::7234098548425728986::1709259244::1709319221::1::::<><>::
 B_off.png::CompressedTexture2D::2720945480200830151::1709259244::1709319221::1::::<><>::
 B_on.png::CompressedTexture2D::5641761232533880517::1709259244::1709319221::1::::<><>::
-::res://Art/TileMap_SF/Grafika/fuzja/::1709259432
+::res://Art/TileMap_SF/Grafika/fuzja/::1709319221
 fuzja0000.png::CompressedTexture2D::938344395916561640::1709259244::1709319221::1::::<><>::
 fuzja0001.png::CompressedTexture2D::3731916822371722794::1709259244::1709319221::1::::<><>::
 fuzja0002.png::CompressedTexture2D::3483638884504970269::1709259244::1709319221::1::::<><>::
@@ -32,7 +32,7 @@ fuzja_zepsuta0000.png::CompressedTexture2D::2094995314738278187::1709259244::170
 fuzja_zepsuta0001.png::CompressedTexture2D::8501379929662148877::1709259244::1709319221::1::::<><>::
 fuzja_zepsuta0002.png::CompressedTexture2D::2068729833504830479::1709259244::1709319221::1::::<><>::
 fuzja_zepsuta0003.png::CompressedTexture2D::3255594857473251700::1709259244::1709319221::1::::<><>::
-::res://Art/TileMap_SF/Grafika/Point/::1709259432
+::res://Art/TileMap_SF/Grafika/Point/::1709319221
 point_error0000.png::CompressedTexture2D::49248216081597727::1709259244::1709319221::1::::<><>::
 point_error0001.png::CompressedTexture2D::2401197906322518564::1709259244::1709319221::1::::<><>::
 point_error0002.png::CompressedTexture2D::900557075386283876::1709259244::1709319221::1::::<><>::
@@ -93,12 +93,12 @@ point_white_active0011.png::CompressedTexture2D::1281394189528259160::1709259244
 point_white_active0012.png::CompressedTexture2D::9037537424602988798::1709259244::1709319221::1::::<><>::
 point_white_active0013.png::CompressedTexture2D::2591622925554092626::1709259244::1709319221::1::::<><>::
 point_white_active0014.png::CompressedTexture2D::8149388162355516540::1709259244::1709319221::1::::<><>::
-::res://Art/TileMap_SF/Grafika/Point_mouse/::1709259432
+::res://Art/TileMap_SF/Grafika/Point_mouse/::1709319221
 point0000.png::CompressedTexture2D::8564977327885321566::1709259244::1709319221::1::::<><>::
 point0001.png::CompressedTexture2D::5691189226395586525::1709259244::1709319221::1::::<><>::
 point0002.png::CompressedTexture2D::6154574791224000427::1709259244::1709319221::1::::<><>::
 point0003.png::CompressedTexture2D::4918176114072233044::1709259244::1709319221::1::::<><>::
-::res://Art/TileMap_SF/Grafika/scr/::1709259432
+::res://Art/TileMap_SF/Grafika/scr/::1709319221
 email_normal0000.png::CompressedTexture2D::6301892570267294343::1709259244::1709319221::1::::<><>::
 email_normal0001.png::CompressedTexture2D::4624360535732027932::1709259244::1709319221::1::::<><>::
 email_normal0002.png::CompressedTexture2D::3421143838102846033::1709259244::1709319221::1::::<><>::
@@ -148,7 +148,7 @@ navi_w0003.png::CompressedTexture2D::3580548931932032943::1709259244::1709319221
 navi_w0004.png::CompressedTexture2D::7114722447699794115::1709259244::1709319221::1::::<><>::
 navi_w0005.png::CompressedTexture2D::2167792883306453199::1709259244::1709319221::1::::<><>::
 navi_w0006.png::CompressedTexture2D::487095513373070424::1709259244::1709319221::1::::<><>::
-::res://Art/TileMap_SF/Grafika/w/::1709259432
+::res://Art/TileMap_SF/Grafika/w/::1709319221
 off.png::CompressedTexture2D::6805077383018627144::1709259244::1709319221::1::::<><>::
 w_on0000.png::CompressedTexture2D::5863775308052872597::1709259244::1709319221::1::::<><>::
 w_on0001.png::CompressedTexture2D::838647703211322040::1709259244::1709319221::1::::<><>::
@@ -157,7 +157,7 @@ w_on0003.png::CompressedTexture2D::260621494735449483::1709259244::1709319221::1
 w_on0004.png::CompressedTexture2D::8791995403473098050::1709259244::1709319221::1::::<><>::
 w_on0005.png::CompressedTexture2D::3967928969202447417::1709259244::1709319221::1::::<><>::
 w_on0006.png::CompressedTexture2D::2448721067825996504::1709259244::1709319221::1::::<><>::
-::res://Art/TileMap_SF/Grafika/wi/::1709259432
+::res://Art/TileMap_SF/Grafika/wi/::1709319221
 w1.png::CompressedTexture2D::169551120650376072::1709259244::1709319221::1::::<><>::
 w2.png::CompressedTexture2D::6363622671175596311::1709259244::1709319221::1::::<><>::
 w3.png::CompressedTexture2D::4111096819370641963::1709259244::1709319221::1::::<><>::

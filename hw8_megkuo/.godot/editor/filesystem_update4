@@ -1,0 +1,9 @@
+res://Scenes/demo_scene.tscn
+res://Scenes/castle_tileset.tres
+res://Scenes/charlie.tscn
+res://Scenes/colorful_platformer_tileset.tres
+res://Scenes/sara.tscn
+res://Scenes/problem_one.tscn
+res://Scripts/CharacterMovement.gd
+res://Scenes/problem_one_orig.tscn
+res://Scenes/player.tscn
