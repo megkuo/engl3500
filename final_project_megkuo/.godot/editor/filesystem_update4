@@ -12,3 +12,5 @@ res://CharlieMovement.gd
 res://Scenes/sara2.tscn
 res://Scenes/sara.tscn
 res://Scripts/SaraMovement.gd
+res://Scripts/CharlieMovement.gd
+res://Scripts/DoorCollisionController.gd

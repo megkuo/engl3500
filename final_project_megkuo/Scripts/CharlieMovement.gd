@@ -112,6 +112,3 @@ func _physics_process(delta):
 			#collision.get_collider().apply_force(pre_collision_velocity * collision_normal * force_coefficient)
 
 		
-
-
-# -----

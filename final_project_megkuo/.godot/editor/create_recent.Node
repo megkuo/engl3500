@@ -1,1 +1,4 @@
+CollisionShape2D
+AnimatableBody2D
+Area2D
 TileMap
