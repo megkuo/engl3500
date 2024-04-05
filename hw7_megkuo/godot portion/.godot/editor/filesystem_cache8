@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710527453
+::res://::1712282580
 demo_scene_class.tscn::PackedScene::3950025353887902339::1709319233::0::1::::<><>::res://Scripts/BadCoupledScriptDontUse.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/ShowHide.gd<>res://Scripts/CharacterMovement.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg<>res://Scripts/CollisionController.gd<>uid://c5s3a28nqkban::::res://Art/sonic-transparent.png<>res://Scripts/rotate.gd
 demo_scene_complete.tscn::PackedScene::7411730775520367512::1709260058::0::1::::<><>::res://Scripts/BadCoupledScriptDontUse.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/ShowHide.gd<>res://Scripts/CharacterMovement.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg<>res://Scripts/CollisionController.gd<>uid://c5s3a28nqkban::::res://Art/sonic-transparent.png<>res://Scripts/rotate.gd
 homework_scene_four.tscn::PackedScene::791585469340075705::1709319233::0::1::::<><>::uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/Scripts Only for Homework Exercises/ShowHide_HW_four.gd<>res://Scripts/CharacterMovement.gd<>res://Scripts/Scripts Only for Homework Exercises/CollisionController_HW_four.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg
