@@ -11,6 +11,9 @@ var gravity = ProjectSettings.get("physics/2d/default_gravity")
 @export var friction : float ## What friction should they experience on the ground?
 var move_left : bool
 var move_right : bool
+var jump : bool
+var crouch : bool
+var stay : bool
 
 # crouch toggle instead of jump? aka since she's smaller
 
@@ -27,6 +30,10 @@ func _ready():
 func _get_input(delta):
 	#var input_direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	# input detection
+	
+	if stay:
+		return # skip checking movement
+	
 	if is_on_floor(): # inherited from CharacterBody2D
 		if move_left: # moves character to left when left input is detected
 			velocity += Vector2(-movement_speed,0)
@@ -34,8 +41,8 @@ func _get_input(delta):
 		if move_right: # moves character to right when right input is detected
 			velocity += Vector2(movement_speed,0)
 #
-		#if Input.is_action_just_pressed("jump"): # Jump only happens when we're on the floor (unless we want a double jump, but we won't use that here)
-			#velocity += Vector2(1,-jump_height)
+		if jump: # Jump only happens when we're on the floor (unless we want a double jump, but we won't use that here)
+			velocity += Vector2(1,-jump_height)
 #
 	#if not is_on_floor():
 		#if Input.is_action_pressed("move_left"): # moves character to left when left input is detected
@@ -45,12 +52,12 @@ func _get_input(delta):
 			#velocity += Vector2(movement_speed * horizontal_air_coefficient,0)
 	#
 	# logic for crouching
-	if Input.is_action_pressed("crouch"):
+	if crouch:
 			# scales GodotBot so that the y is half the size
 			scale = Vector2(1, 0.5) # can look up attributes of CharacterBody2D/Node2D
 			pass
 			
-	if not Input.is_action_pressed("crouch"):
+	if not crouch:
 		# scale GodotBot's so that the y is half the size
 		scale = Vector2(1, 1)
 		pass
@@ -137,4 +144,37 @@ func _on_right_button_button_down():
 
 func _on_right_button_button_up():
 	move_right = false
+	pass # Replace with function body.
+
+
+func _on_jump_button_button_down():
+	jump = true
+	pass # Replace with function body.
+
+
+func _on_jump_button_button_up():
+	jump = false
+	pass # Replace with function body.
+
+
+func _on_stay_button_button_down():
+	stay = true
+	pass # Replace with function body.
+
+
+func _on_stay_button_button_up():
+	stay = false
+	pass # Replace with function body.
+
+
+func _on_crouch_button_button_down():
+	if crouch:
+		crouch = false
+	elif not crouch:
+		crouch = true
+	pass # Replace with function body.
+
+
+func _on_crouch_button_button_up():
+	#crouch = false
 	pass # Replace with function body.

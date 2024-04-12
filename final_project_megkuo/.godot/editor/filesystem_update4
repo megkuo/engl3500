@@ -1,16 +1,10 @@
-res://Scenes/level1.tscn
+res://Scenes/house demo.tscn
 res://Scenes/castle_tileset.tres
 res://Scenes/colorful_platformer_tileset.tres
-res://Scenes/house demo.tscn
-res://Scenes/problem_one_orig.tscn
+res://Scenes/level1.tscn
 res://homework_scene_four.tscn
-res://demo_scene_complete.tscn
-res://homework_scene_one.tscn
-res://Scripts/CollisionController.gd
-res://Scenes/door.gd
-res://CharlieMovement.gd
-res://Scenes/sara2.tscn
 res://Scenes/sara.tscn
+res://Scenes/sara2.tscn
 res://Scripts/SaraMovement.gd
-res://Scripts/CharlieMovement.gd
-res://Scripts/DoorCollisionController.gd
+res://Scripts/SpeechBubbleMovement.gd
+res://Scenes/speech bubble text.gd
