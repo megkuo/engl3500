@@ -8,3 +8,6 @@ res://Scenes/sara2.tscn
 res://Scripts/SaraMovement.gd
 res://Scripts/SpeechBubbleMovement.gd
 res://Scenes/speech bubble text.gd
+res://Scenes/level3.tscn
+res://Scenes/crate.gd
+res://SaraMovement_2.gd
