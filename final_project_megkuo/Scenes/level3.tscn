@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cxiudyporjugq"]
+[gd_scene load_steps=22 format=3 uid="uid://cxiudyporjugq"]
 
 [ext_resource type="TileSet" uid="uid://dv5pq4cqkyek7" path="res://Scenes/castle_tileset.tres" id="1_t3w5q"]
 [ext_resource type="Script" path="res://Scripts/DoorCollisionController.gd" id="2_hfiso"]
@@ -6,12 +6,14 @@
 [ext_resource type="Script" path="res://Scenes/door.gd" id="4_wnbke"]
 [ext_resource type="PackedScene" uid="uid://cbr5k5ify18o4" path="res://Scenes/charlie.tscn" id="5_rqrih"]
 [ext_resource type="Script" path="res://Scripts/CharlieMovement.gd" id="6_p4nhq"]
-[ext_resource type="PackedScene" uid="uid://caamx8nrkako7" path="res://Scenes/sara.tscn" id="7_j1v4y"]
 [ext_resource type="PackedScene" uid="uid://c712hpghwdsjw" path="res://Scenes/sara2.tscn" id="8_kyomy"]
 [ext_resource type="Script" path="res://Scripts/SpeechBubbleMovement.gd" id="10_7sfgo"]
 [ext_resource type="PackedScene" uid="uid://cj1vyr6kvr67l" path="res://Scenes/crate.tscn" id="11_28xo6"]
 [ext_resource type="Script" path="res://Scenes/speech bubble text.gd" id="11_ylo42"]
 [ext_resource type="Script" path="res://Scenes/crate.gd" id="12_itxkr"]
+[ext_resource type="PackedScene" uid="uid://c3vwpuc7k0bw0" path="res://Scenes/charlie_part.tscn" id="13_1a6xw"]
+[ext_resource type="Script" path="res://Scenes/CameraFollowSara.gd" id="13_gssho"]
+[ext_resource type="Script" path="res://Scenes/charlie_part.gd" id="14_psov2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a313a"]
 size = Vector2(64, 64)
@@ -1887,23 +1889,9 @@ layer_0/tile_data = PackedInt32Array(1966178, 5570560, 1610612772, 1900642, 5636
 script = ExtResource("4_wnbke")
 
 [node name="charlie" parent="." instance=ExtResource("5_rqrih")]
-visible = false
-position = Vector2(624, 434)
+position = Vector2(1819, 483)
+rotation = 1.57079
 motion_mode = 0
-script = ExtResource("6_p4nhq")
-jump_height = 700.0
-movement_speed = 100.0
-horizontal_air_coefficient = 0.5
-speed_limit = 500.0
-friction = 0.2
-
-[node name="sara" parent="." instance=ExtResource("7_j1v4y")]
-visible = false
-position = Vector2(478, 484)
-scale = Vector2(1, 1)
-collision_layer = 2
-mass = 4.37
-gravity_scale = 0.504
 
 [node name="sara2" parent="." instance=ExtResource("8_kyomy")]
 position = Vector2(755, 434)
@@ -2025,10 +2013,10 @@ position = Vector2(90, 21.5)
 shape = SubResource("RectangleShape2D_hm230")
 
 [node name="OpenDoorButton2" type="Button" parent="."]
-offset_left = 1686.0
-offset_top = 498.0
-offset_right = 1881.0
-offset_bottom = 541.0
+offset_left = 1426.0
+offset_top = 647.0
+offset_right = 1621.0
+offset_bottom = 690.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_6lmv1")
 text = "Stand Here to Open Door"
 
@@ -2045,6 +2033,14 @@ shape = SubResource("RectangleShape2D_1twvc")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="OpenDoorButton2/OpenDoorArea2D2"]
 position = Vector2(90, 21.5)
 shape = SubResource("RectangleShape2D_hm230")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+script = ExtResource("13_gssho")
+
+[node name="charlie_part" parent="." instance=ExtResource("13_1a6xw")]
+position = Vector2(373, 499)
+script = ExtResource("14_psov2")
 
 [connection signal="button_down" from="LeftButton" to="sara2" method="_on_left_button_button_down"]
 [connection signal="button_down" from="LeftButton" to="speech bubble" method="_on_left_button_button_down"]

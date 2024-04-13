@@ -11,3 +11,6 @@ res://Scenes/speech bubble text.gd
 res://Scenes/level3.tscn
 res://Scenes/crate.gd
 res://SaraMovement_2.gd
+res://Scenes/CameraFollowSara.gd
+res://Scenes/charlie_part.tscn
+res://Scenes/charlie_part.gd

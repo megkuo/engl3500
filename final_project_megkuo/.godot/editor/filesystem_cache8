@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712943183
+::res://::1713050144
 button_basic.tscn::PackedScene::4372476739939081001::1712282806::0::1::::<><>::uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/Scripts Only for Homework Exercises/ShowHide_HW_four.gd<>res://Scripts/Scripts Only for Homework Exercises/CollisionController_HW_four.gd
 demo_scene_class.tscn::PackedScene::-1::1709319233::0::1::::<><>::
 demo_scene_complete.tscn::PackedScene::2515644952117807356::1712284433::0::1::::<><>::res://Scripts/BadCoupledScriptDontUse.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/ShowHide.gd<>res://Scripts/CharacterMovement.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg<>res://Scripts/CollisionController.gd<>uid://c5s3a28nqkban::::res://Art/sonic-transparent.png<>res://Scripts/rotate.gd
-homework_scene_four.tscn::PackedScene::5436936445992082599::1712336211::0::1::::<><>::uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/Scripts Only for Homework Exercises/ShowHide_HW_four.gd<>res://Scripts/CharacterMovement.gd<>res://Scripts/Scripts Only for Homework Exercises/CollisionController_HW_four.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg
+homework_scene_four.tscn::PackedScene::5436936445992082599::1712953786::0::1::::<><>::uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/Scripts Only for Homework Exercises/ShowHide_HW_four.gd<>res://Scripts/CharacterMovement.gd<>res://Scripts/Scripts Only for Homework Exercises/CollisionController_HW_four.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg
 homework_scene_one.tscn::PackedScene::5936895197544758075::1712284343::0::1::::<><>::res://Scripts/Scripts Only for Homework Exercises/rotate_for_HW_scene_one.gd<>uid://c5s3a28nqkban::::res://Art/sonic-transparent.png
 homework_scene_three.tscn::PackedScene::-1::1709262265::0::1::::<><>::
 homework_scene_two.tscn::PackedScene::-1::1709262232::0::1::::<><>::
@@ -11,7 +11,9 @@ icon.svg::CompressedTexture2D::1599126193549192350::1707591391::1712256674::1:::
 new_canvas_item_material.tres::CanvasItemMaterial::-1::1709259244::0::1::::<><>::
 new_shader_material.gdshader::Shader::-1::1709259244::0::1::::<><>::
 new_shader_material.tres::ShaderMaterial::-1::1709259244::0::1::::<><>::
-::res://Art/::1712282668
+SaraMovement_2.gd::GDScript::-1::1712955125::0::1::::<>CharacterBody2D<>::
+::res://Art/::1713050144
+charlie_part.png::CompressedTexture2D::7026988476022653390::1713050123::1713050144::1::::<><>::
 crate.png::CompressedTexture2D::3473499658807442297::1707591391::1712256674::1::::<><>::
 icon.svg::CompressedTexture2D::7786265186431896202::1709259244::1712282668::1::::<><>::
 sonic-transparent.png::CompressedTexture2D::6917367021619146305::1709259244::1712282668::1::::<><>::
@@ -835,21 +837,25 @@ tile_0023.png::CompressedTexture2D::6977479374806826830::1696685234::1712256673:
 tile_0024.png::CompressedTexture2D::1441827328262238061::1696685234::1712256673::1::::<><>::
 tile_0025.png::CompressedTexture2D::6182341822801131065::1696685234::1712256673::1::::<><>::
 tile_0026.png::CompressedTexture2D::7817663785461261623::1696685236::1712256673::1::::<><>::
-::res://Scenes/::1712336243
-castle_tileset.tres::TileSet::8696099954701793252::1712283014::0::1::::<><>::uid://b73jw57phqeh1::::res://Art/tilesets/Terrain (32x32).png
+::res://Scenes/::1713050144
+CameraFollowSara.gd::GDScript::-1::1713048173::0::1::::<>Camera2D<>::
+castle_tileset.tres::TileSet::8696099954701793252::1712943840::0::1::::<><>::uid://b73jw57phqeh1::::res://Art/tilesets/Terrain (32x32).png
 charlie.gd::GDScript::-1::1710527209::0::1::::<>CharacterBody2D<>::
 charlie.tscn::PackedScene::4879965588884542957::1712282805::0::1::::<><>::res://Scripts/CharacterMovement.gd<>uid://bc8flhxk18i5j::::res://Art/pixel art/charlie_sprite.png.png
-colorful_platformer_tileset.tres::TileSet::6258615073144355978::1712283015::0::1::::<><>::uid://bgl5rdh8c72cs::::res://Art/tilesets/kenney_abstract-platformer/Tilesheet/tilesheet_complete.png
+colorful_platformer_tileset.tres::TileSet::6258615073144355978::1712943190::0::1::::<><>::uid://bgl5rdh8c72cs::::res://Art/tilesets/kenney_abstract-platformer/Tilesheet/tilesheet_complete.png
+crate.gd::GDScript::-1::1712955299::0::1::::<>RigidBody2D<>::
 crate.tscn::PackedScene::5459533638904872735::1707591391::0::1::::<><>::uid://bpqubc4vwcmwn::::res://Art/crate.png
 door.gd::GDScript::-1::1712335182::0::1::::<>Node<>::
-house demo.tscn::PackedScene::693233875712379051::1712336211::0::1::::<><>::res://Scripts/Rotate.gd<>uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>uid://cvfyqgdgj4g47::::res://Scenes/colorful_platformer_tileset.tres<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>uid://caamx8nrkako7::::res://Scenes/sara.tscn
-level1.tscn::PackedScene::7181494222545119410::1712336243::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/DoorCollisionController.gd<>res://Scenes/door.gd<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>uid://caamx8nrkako7::::res://Scenes/sara.tscn<>res://Scripts/CharlieMovement.gd<>res://Scripts/SaraMovement.gd<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn
+house demo.tscn::PackedScene::693233875712379051::1713049399::0::1::::<><>::res://Scripts/Rotate.gd<>uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>uid://cvfyqgdgj4g47::::res://Scenes/colorful_platformer_tileset.tres<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>uid://caamx8nrkako7::::res://Scenes/sara.tscn
+level1.tscn::PackedScene::7181494222545119410::1713049399::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/DoorCollisionController.gd<>res://Scenes/door.gd<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>uid://caamx8nrkako7::::res://Scenes/sara.tscn<>res://Scripts/CharlieMovement.gd<>res://Scripts/SaraMovement.gd<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn<>res://Scripts/SpeechBubbleMovement.gd<>res://Scenes/speech bubble text.gd
+level3.tscn::PackedScene::6404920774722129540::1713049439::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>res://Scripts/DoorCollisionController.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scenes/door.gd<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scripts/CharlieMovement.gd<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn<>res://Scripts/SpeechBubbleMovement.gd<>uid://cj1vyr6kvr67l::::res://Scenes/crate.tscn<>res://Scenes/speech bubble text.gd<>res://Scenes/crate.gd<>res://Scenes/CameraFollowSara.gd
 player.gd::GDScript::-1::1710527165::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::2269052823509162713::1710527823::0::1::::<><>::res://Scripts/CharacterMovement.gd<>uid://w1vm0ib8gkl7::::res://icon.svg
 problem_one_orig.tscn::PackedScene::3570011749073253254::1712335030::0::1::::<><>::res://Scripts/Rotate.gd<>uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>uid://cvfyqgdgj4g47::::res://Scenes/colorful_platformer_tileset.tres<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scenes/charlie.gd<>uid://caamx8nrkako7::::res://Scenes/sara.tscn
-sara2.tscn::PackedScene::7074210842237486440::1712336211::0::1::::<><>::res://Scripts/CharacterMovement.gd<>uid://rl8spp484uu5::::res://Art/pixel art/sara_sprite.png.png
-sara.tscn::PackedScene::4773612798698002084::1712336211::0::1::::<><>::uid://rl8spp484uu5::::res://Art/pixel art/sara_sprite.png.png
-::res://Scripts/::1712418704
+sara2.tscn::PackedScene::7074210842237486440::1712953786::0::1::::<><>::res://Scripts/CharacterMovement.gd<>uid://rl8spp484uu5::::res://Art/pixel art/sara_sprite.png.png
+sara.tscn::PackedScene::4773612798698002084::1712953786::0::1::::<><>::uid://rl8spp484uu5::::res://Art/pixel art/sara_sprite.png.png
+speech bubble text.gd::GDScript::-1::1712953651::0::1::::<>RichTextLabel<>::
+::res://Scripts/::1712953708
 BadCoupledScriptDontUse.gd::GDScript::-1::1709259244::0::1::::<>Node<>::
 CharacterMovement.gd::GDScript::-1::1712257787::0::1::::<>CharacterBody2D<>::
 CharlieMovement.gd::GDScript::-1::1712333184::0::1::::<>CharacterBody2D<>::
@@ -859,8 +865,9 @@ DoorCollisionController.gd::GDScript::-1::1712336186::0::1::::<>Node<>::
 MoveCharacter.gd::GDScript::-1::1712257391::0::1::::<>CharacterBody2D<>::
 PolygonCollisionShaper.gd::GDScript::-1::1710784702::0::1::::<>Node2D<>::
 rotate.gd::GDScript::-1::1709259244::0::1::::<>Node2D<>::
-SaraMovement.gd::GDScript::-1::1712335343::0::1::::<>CharacterBody2D<>::
+SaraMovement.gd::GDScript::-1::1712944095::0::1::::<>CharacterBody2D<>::
 ShowHide.gd::GDScript::-1::1709259244::0::1::::<>Node<>::
+SpeechBubbleMovement.gd::GDScript::-1::1712953708::0::1::::<>Node2D<>::
 ::res://Scripts/Scripts Only for Homework Exercises/::1709262162
 CollisionController_HW_four.gd::GDScript::-1::1709262162::0::1::::<>Node<>::
 rotate_for_HW_scene_one.gd::GDScript::-1::1709260210::0::1::::<>Node2D<>::

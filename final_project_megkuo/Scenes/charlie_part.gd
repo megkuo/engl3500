@@ -36,7 +36,6 @@ func _pick_up():
 		collision_mask = 1
 		
 	# hmm unsure -- TODO
-	
 func _distance_calc(x1, y1, x2, y2):
 	# eww math
 	return sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2))
@@ -55,7 +54,6 @@ func character_nearby():
 	#print(distance)
 	
 	if distance < 120:
-		print("true")
 		return true
 		
 	else:

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3vwpuc7k0bw0"]
+
+[ext_resource type="Texture2D" uid="uid://c7d6qdogg124y" path="res://Art/charlie_part.png" id="1_3gpa3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akby8"]
+size = Vector2(63.9998, 63.9998)
+
+[node name="Crate" type="RigidBody2D"]
+position = Vector2(6.10352e-05, 6.10352e-05)
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.000170159, -0.000170159)
+shape = SubResource("RectangleShape2D_akby8")
+
+[node name="Crate" type="Sprite2D" parent="."]
+position = Vector2(2.99994, -3.00006)
+scale = Vector2(2.18701, 2.18701)
+texture = ExtResource("1_3gpa3")
