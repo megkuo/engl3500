@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cxiudyporjugq"]
+[gd_scene load_steps=24 format=3 uid="uid://cxiudyporjugq"]
 
 [ext_resource type="TileSet" uid="uid://dv5pq4cqkyek7" path="res://Scenes/castle_tileset.tres" id="1_t3w5q"]
 [ext_resource type="Script" path="res://Scripts/DoorCollisionController.gd" id="2_hfiso"]
@@ -1859,6 +1859,8 @@ size = Vector2(19.4732, 10.9096)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hm230"]
 size = Vector2(178, 43)
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ikcc7"]
+
 [node name="Level3" type="Node2D"]
 position = Vector2(59, 354)
 
@@ -1896,7 +1898,7 @@ rotation = 1.57079
 motion_mode = 0
 
 [node name="sara" parent="." instance=ExtResource("8_kyomy")]
-position = Vector2(755, 434)
+position = Vector2(755, 465)
 collision_layer = 2
 collision_mask = 2
 motion_mode = 0
@@ -1985,7 +1987,7 @@ text = "crouch
 "
 
 [node name="Crate" parent="." instance=ExtResource("11_28xo6")]
-position = Vector2(857, 415)
+position = Vector2(870, 507)
 collision_layer = 3
 collision_mask = 3
 physics_material_override = SubResource("PhysicsMaterial_1h0ru")
@@ -2042,12 +2044,14 @@ zoom = Vector2(2, 2)
 script = ExtResource("13_gssho")
 
 [node name="charlie_part" parent="." instance=ExtResource("13_1a6xw")]
-position = Vector2(1590, 201)
+position = Vector2(1596, 203)
+gravity_scale = 0.847
 script = ExtResource("14_psov2")
 
 [node name="charlie2" parent="." instance=ExtResource("15_obtm2")]
-position = Vector2(1177, 415)
+position = Vector2(1860, 507)
 scale = Vector2(0.849395, 0.832544)
+physics_material_override = SubResource("PhysicsMaterial_ikcc7")
 gravity_scale = 0.945
 
 [connection signal="button_down" from="LeftButton" to="sara" method="_on_left_button_button_down"]
@@ -2082,8 +2086,8 @@ gravity_scale = 0.945
 [connection signal="button_down" from="OpenDoorButton2" to="StaticBody2D -- door/door" method="_on_open_door_button_button_down"]
 [connection signal="button_up" from="OpenDoorButton2" to="StaticBody2D -- door" method="_on_open_door_button_button_up"]
 [connection signal="button_up" from="OpenDoorButton2" to="StaticBody2D -- door/door" method="_on_open_door_button_button_up"]
-[connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_entered"]
+[connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door/door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_exited"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_exited"]
