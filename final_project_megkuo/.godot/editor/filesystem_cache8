@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714525945
+::res://::1714586234
 button_basic.tscn::PackedScene::4372476739939081001::1712282806::0::1::::<><>::uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/Scripts Only for Homework Exercises/ShowHide_HW_four.gd<>res://Scripts/Scripts Only for Homework Exercises/CollisionController_HW_four.gd
 demo_scene_class.tscn::PackedScene::-1::1709319233::0::1::::<><>::
 demo_scene_complete.tscn::PackedScene::2515644952117807356::1712284433::0::1::::<><>::res://Scripts/BadCoupledScriptDontUse.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scripts/ShowHide.gd<>res://Scripts/CharacterMovement.gd<>uid://di6ywdo5o23xu::::res://Art/icon.svg<>res://Scripts/CollisionController.gd<>uid://c5s3a28nqkban::::res://Art/sonic-transparent.png<>res://Scripts/rotate.gd
@@ -20,7 +20,7 @@ crate.png::CompressedTexture2D::3473499658807442297::1707591391::1712256674::1::
 icon.svg::CompressedTexture2D::7786265186431896202::1709259244::1712282668::1::::<><>::
 sonic-transparent.png::CompressedTexture2D::6917367021619146305::1709259244::1712282668::1::::<><>::
 tree.png::CompressedTexture2D::8597386790469409455::1707591391::1712256674::1::::<><>::
-::res://Art/pixel art/::1714527396
+::res://Art/pixel art/::1714527398
 charlie_injured-1.png.png::CompressedTexture2D::8286949202346010980::1714527391::1714527398::1::::<><>::
 charlie_lying_down.png::CompressedTexture2D::1004549594397813109::1713220350::1714525816::1::::<><>::
 charlie_sprite.png.png::CompressedTexture2D::2595246469234283469::1710526481::1712256674::1::::<><>::
@@ -842,11 +842,12 @@ tile_0023.png::CompressedTexture2D::6977479374806826830::1696685234::1712256673:
 tile_0024.png::CompressedTexture2D::1441827328262238061::1696685234::1712256673::1::::<><>::
 tile_0025.png::CompressedTexture2D::6182341822801131065::1696685234::1712256673::1::::<><>::
 tile_0026.png::CompressedTexture2D::7817663785461261623::1696685236::1712256673::1::::<><>::
-::res://Scenes/::1714526450
+::res://Scenes/::1714528154
 CameraFollowSara.gd::GDScript::-1::1714263290::0::1::::<>Camera2D<>::
 castle_tileset.tres::TileSet::8696099954701793252::1714520271::0::1::::<><>::uid://b73jw57phqeh1::::res://Art/tilesets/Terrain (32x32).png
 charlie.gd::GDScript::-1::1710527209::0::1::::<>CharacterBody2D<>::
 charlie.tscn::PackedScene::4879965588884542957::1712282805::0::1::::<><>::res://Scripts/CharacterMovement.gd<>uid://bc8flhxk18i5j::::res://Art/pixel art/charlie_sprite.png.png
+charlie_injured.tscn::PackedScene::8807049227097303757::1714528089::0::1::::<><>::res://Scripts/CharacterMovement.gd<>uid://dqci3wcrcfpq7::::res://Art/pixel art/charlie_injured-1.png.png
 charlie_lying_down.tscn::PackedScene::4734504693099916262::1714526450::0::1::::<><>::uid://oku1xry38kyv::::res://Art/pixel art/charlie_lying_down.png
 charlie_part.gd::GDScript::-1::1714263320::0::1::::<>RigidBody2D<>::
 charlie_part.tscn::PackedScene::6782844537860692977::1714523470::0::1::::<><>::uid://c7d6qdogg124y::::res://Art/charlie_part.png
@@ -854,29 +855,28 @@ colorful_platformer_tileset.tres::TileSet::6258615073144355978::1714520271::0::1
 crate.gd::GDScript::-1::1714263394::0::1::::<>RigidBody2D<>::
 crate.tscn::PackedScene::5459533638904872735::1707591391::0::1::::<><>::uid://bpqubc4vwcmwn::::res://Art/crate.png
 door.gd::GDScript::-1::1712335182::0::1::::<>Node<>::
-game_node.tscn::PackedScene::2682521199859333439::1714526449::0::1::::<><>::uid://c712hpghwdsjw::::res://Scenes/sara2.tscn<>uid://dak1fpw31wni5::::res://Scenes/level1.tscn<>uid://cxiudyporjugq::::res://Scenes/level3.tscn<>uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scripts/SpeechBubbleMovement2.gd<>res://Scenes/speech bubble text 2.gd
-house demo.tscn::PackedScene::693233875712379051::1714526449::0::1::::<><>::res://Scripts/Rotate.gd<>uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>uid://cvfyqgdgj4g47::::res://Scenes/colorful_platformer_tileset.tres<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>uid://caamx8nrkako7::::res://Scenes/sara.tscn
-level1.tscn::PackedScene::7181494222545119410::1714526449::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>res://Scripts/DoorCollisionController.gd<>res://Scenes/door.gd<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scripts/CharlieMovement.gd<>res://Scripts/CharlieMovement_Button.gd<>res://Scripts/SpeechBubbleMovement2.gd<>res://Scenes/speech bubble text 2.gd<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn
-level3.tscn::PackedScene::6404920774722129540::1714526449::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>res://Scripts/DoorCollisionController.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scenes/door.gd<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scripts/CharlieMovement.gd<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn<>res://Scripts/SpeechBubbleMovement2.gd<>res://Scenes/speech bubble text 2.gd<>uid://cj1vyr6kvr67l::::res://Scenes/crate.tscn<>res://Scenes/crate.gd<>uid://c3vwpuc7k0bw0::::res://Scenes/charlie_part.tscn<>res://Scenes/CameraFollowSara.gd<>res://Scenes/charlie_part.gd<>uid://b8pouoja0l8yk::::res://Scenes/charlie_lying_down.tscn
-level4.tscn::PackedScene::1845116958780552340::1714526450::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>res://Scripts/DoorCollisionController.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scenes/door.gd<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scripts/CharlieMovement_Button.gd<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn<>res://Scripts/CharlieMovement.gd<>res://Scripts/SpeechBubbleMovement.gd<>res://Scenes/speech bubble text 2.gd<>res://Scenes/CameraFollowSara.gd<>res://Scripts/buttons_script.gd<>uid://bgc7trujvtai7::::res://Scenes/walkie_talkie.tscn<>res://Scenes/walkie_talkie.gd
+game_node.tscn::PackedScene::2682521199859333439::1714528089::0::1::::<><>::uid://c712hpghwdsjw::::res://Scenes/sara2.tscn<>uid://dak1fpw31wni5::::res://Scenes/level1.tscn<>uid://cxiudyporjugq::::res://Scenes/level3.tscn<>uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scripts/SpeechBubbleMovement2.gd<>res://Scenes/speech bubble text 2.gd
+house demo.tscn::PackedScene::693233875712379051::1714528089::0::1::::<><>::res://Scripts/Rotate.gd<>uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>uid://cvfyqgdgj4g47::::res://Scenes/colorful_platformer_tileset.tres<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>uid://caamx8nrkako7::::res://Scenes/sara.tscn
+level1.tscn::PackedScene::7181494222545119410::1714528089::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>res://Scripts/DoorCollisionController.gd<>res://Scenes/door.gd<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scripts/CharlieMovement.gd<>res://Scripts/CharlieMovement_Button.gd<>res://Scripts/SpeechBubbleMovement2.gd<>res://Scenes/speech bubble text 2.gd<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn
+level3.tscn::PackedScene::6404920774722129540::1714528089::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>res://Scripts/DoorCollisionController.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scenes/door.gd<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scripts/CharlieMovement.gd<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn<>res://Scripts/SpeechBubbleMovement2.gd<>res://Scenes/speech bubble text 2.gd<>uid://cj1vyr6kvr67l::::res://Scenes/crate.tscn<>res://Scenes/crate.gd<>uid://c3vwpuc7k0bw0::::res://Scenes/charlie_part.tscn<>res://Scenes/CameraFollowSara.gd<>res://Scenes/charlie_part.gd<>uid://b8pouoja0l8yk::::res://Scenes/charlie_lying_down.tscn
+level4.tscn::PackedScene::1845116958780552340::1714528154::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>res://Scripts/DoorCollisionController.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scenes/door.gd<>res://Scripts/CharlieMovement_Button.gd<>uid://dxqg2xbgx2bab::::res://Scenes/charlie_injured.tscn<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn<>res://Scripts/CharlieMovement.gd<>res://Scripts/SpeechBubbleMovement.gd<>res://Scenes/speech bubble text 2.gd<>res://Scenes/CameraFollowSara.gd<>res://Scripts/buttons_script.gd<>uid://bgc7trujvtai7::::res://Scenes/walkie_talkie.tscn<>res://Scenes/walkie_talkie.gd
 level4t.tscn::PackedScene::495139787681087764::1714520878::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>res://Scripts/DoorCollisionController.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scenes/door.gd<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scripts/SaraMovement.gd<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn<>res://Scripts/SpeechBubbleMovement.gd<>res://Scenes/speech bubble text.gd
 level4tscn.tscn::PackedScene::575900229482368913::1714520866::0::1::::<><>::uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>res://Scripts/DoorCollisionController.gd<>uid://bcj18f1u388bl::::res://Art/TileMap_SF/tileset_sf.png<>res://Scenes/door.gd<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scripts/SaraMovement.gd<>uid://c712hpghwdsjw::::res://Scenes/sara2.tscn<>res://Scripts/SpeechBubbleMovement.gd<>res://Scenes/speech bubble text.gd
 player.gd::GDScript::-1::1710527165::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::2269052823509162713::1710527823::0::1::::<><>::res://Scripts/CharacterMovement.gd<>uid://w1vm0ib8gkl7::::res://icon.svg
 problem_one_orig.tscn::PackedScene::3570011749073253254::1712335030::0::1::::<><>::res://Scripts/Rotate.gd<>uid://dv5pq4cqkyek7::::res://Scenes/castle_tileset.tres<>uid://cvfyqgdgj4g47::::res://Scenes/colorful_platformer_tileset.tres<>uid://cbr5k5ify18o4::::res://Scenes/charlie.tscn<>res://Scenes/charlie.gd<>uid://caamx8nrkako7::::res://Scenes/sara.tscn
-charlie_injured.tscn::PackedScene::8807049227097303757::1714527424::0::1::::<><>::res://Scripts/CharacterMovement.gd<>uid://bc8flhxk18i5j::::res://Art/pixel art/charlie_sprite.png.png
 sara2.tscn::PackedScene::7074210842237486440::1712953786::0::1::::<><>::res://Scripts/CharacterMovement.gd<>uid://rl8spp484uu5::::res://Art/pixel art/sara_sprite.png.png
 sara.tscn::PackedScene::4773612798698002084::1712953786::0::1::::<><>::uid://rl8spp484uu5::::res://Art/pixel art/sara_sprite.png.png
 speech bubble text 2.gd::GDScript::-1::1714522149::0::1::::<>RichTextLabel<>::
 speech bubble text.gd::GDScript::-1::1712953651::0::1::::<>RichTextLabel<>::
 walkie_talkie.gd::GDScript::-1::1714525237::0::1::::<>RigidBody2D<>::
-walkie_talkie.tscn::PackedScene::2813660299112904504::1714526449::0::1::::<><>::uid://c3soqv8y0ygbe::::res://Art/pixel art/walkie_talkie.png
-::res://Scripts/::1714525741
+walkie_talkie.tscn::PackedScene::2813660299112904504::1714528089::0::1::::<><>::uid://c3soqv8y0ygbe::::res://Art/pixel art/walkie_talkie.png
+::res://Scripts/::1714528052
 BadCoupledScriptDontUse.gd::GDScript::-1::1709259244::0::1::::<>Node<>::
 buttons_script.gd::GDScript::-1::1714525725::0::1::::<>Node2D<>::
 CharacterMovement.gd::GDScript::-1::1712257787::0::1::::<>CharacterBody2D<>::
 CharlieMovement.gd::GDScript::-1::1712333184::0::1::::<>CharacterBody2D<>::
-CharlieMovement_Button.gd::GDScript::-1::1714522361::0::1::::<>CharacterBody2D<>::
+CharlieMovement_Button.gd::GDScript::-1::1714528052::0::1::::<>CharacterBody2D<>::
 CollisionController.gd::GDScript::-1::1712334067::0::1::::<>Node<>::
 DeadlyArea.gd::GDScript::-1::1710784702::0::1::::<>Node2D<>::
 DoorCollisionController.gd::GDScript::-1::1714522879::0::1::::<>Node<>::
