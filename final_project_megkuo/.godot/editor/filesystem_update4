@@ -1,16 +1,20 @@
-res://Scenes/house demo.tscn
+res://Scenes/level1.tscn
 res://Scenes/castle_tileset.tres
 res://Scenes/colorful_platformer_tileset.tres
-res://Scenes/level1.tscn
-res://homework_scene_four.tscn
-res://Scenes/sara.tscn
-res://Scenes/sara2.tscn
+res://Scenes/house demo.tscn
+res://Scenes/level3.tscn
+res://Scenes/charlie_part.tscn
+res://Scenes/game_node.tscn
+res://Scenes/level4tscn.tscn
+res://Scenes/level4.tscn
 res://Scripts/SaraMovement.gd
 res://Scripts/SpeechBubbleMovement.gd
-res://Scenes/speech bubble text.gd
-res://Scenes/level3.tscn
-res://Scenes/crate.gd
-res://SaraMovement_2.gd
-res://Scenes/CameraFollowSara.gd
-res://Scenes/charlie_part.tscn
-res://Scenes/charlie_part.gd
+res://Scripts/SpeechBubbleMovement2.gd
+res://Scenes/speech bubble text 2.gd
+res://Scripts/CharlieMovement_Button.gd
+res://Scripts/DoorCollisionController.gd
+res://Scripts/buttons_script.gd
+res://Scenes/walkie_talkie.tscn
+res://Scenes/walkie_talkie.gd
+res://Scenes/charlie_lying_down.tscn
+res://Scenes/charlie_injured.tscn

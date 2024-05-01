@@ -85,8 +85,8 @@ func _on_open_door_area_2d_body_exited(body):
 	#_enable_collision()
 	#open = false
 	pass # Replace with function body.
-
-
+#
+#
 func _on_open_door_area_2d_2_body_entered(body):
 	button_pressers += 1
 	#_disable_collision()
@@ -99,3 +99,5 @@ func _on_open_door_area_2d_2_body_exited(body):
 	#_enable_collision()
 	#open = false
 	pass # Replace with function body.
+	
+	

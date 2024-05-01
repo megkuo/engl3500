@@ -11,20 +11,22 @@ var visibility_timer = 0
 
 func _ready():
 	var root_node = get_parent()
-	var child_two = root_node.get_node("charlie")
+	var child_two = root_node.get_node("sara")
 	#var child_two_child = child_two.get_node("Child_Two_Child")
 	
 	var child_two_position = child_two.global_position
-	print ("The Child_Two node is at position: " + str(child_two_position))
-	print ("My position is: " + str(global_position))
+	#print ("The Child_Two node is at position: " + str(child_two_position))
+	#print ("My position is: " + str(global_position))
 	
 	
 func _physics_process(delta):
+	print(visibility_timer)
 	var root_node = get_parent()
 	#print("AHHH")
-	var child_two = root_node.get_node("charlie")
+	var child_two = root_node.get_node("sara")
 	#var child_two_child = child_two.get_node("Child_Two_Child")
 	var child_two_position = child_two.global_position
+	
 	
 	if visibility_timer > 0: # counts down how long the bubble appears for
 		visibility_timer -= 1
@@ -34,13 +36,11 @@ func _physics_process(delta):
 	if visibility_timer == 0:
 		self.visible = false
 	
-	global_position = child_two_position + Vector2(15, -50)
-
+	global_position = child_two_position + Vector2(15, 0)
 
 func _on_left_button_button_down():
 	visibility_timer = 100
 	pass # Replace with function body.
-
 
 func _on_right_button_button_down():
 	visibility_timer = 100

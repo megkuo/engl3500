@@ -10,7 +10,7 @@ func _ready():
 func _process(delta):
 	var root_node = get_parent()
 	#print("AHHH")
-	var child_two = root_node.get_node("sara2")
+	var child_two = root_node.get_node("sara")
 	#var child_two_child = child_two.get_node("Child_Two_Child")
 	var child_two_position = child_two.global_position
 	global_position = child_two_position + Vector2(10, 0)

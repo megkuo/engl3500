@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxqg2xbgx2bab"]
+
+[ext_resource type="Script" path="res://Scripts/CharacterMovement.gd" id="1_b58rt"]
+[ext_resource type="Texture2D" uid="uid://dqci3wcrcfpq7" path="res://Art/pixel art/charlie_injured-1.png.png" id="2_33tgm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yobjb"]
+size = Vector2(64.8043, 161.806)
+
+[node name="charlie_injured" type="CharacterBody2D"]
+position = Vector2(696, 392)
+scale = Vector2(1.00302, 1.05064)
+motion_mode = 1
+script = ExtResource("1_b58rt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.498108, 7.62939e-06)
+scale = Vector2(0.999999, 1)
+shape = SubResource("RectangleShape2D_yobjb")
+
+[node name="ParentLogo" type="Sprite2D" parent="."]
+position = Vector2(0.998047, 1.90356)
+scale = Vector2(0.2, 0.191)
+texture = ExtResource("2_33tgm")

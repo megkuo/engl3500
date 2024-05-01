@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8pouoja0l8yk"]
+
+[ext_resource type="Texture2D" uid="uid://oku1xry38kyv" path="res://Art/pixel art/charlie_lying_down.png" id="1_5gqqj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akby8"]
+size = Vector2(161.174, 21.3564)
+
+[node name="charlie" type="RigidBody2D"]
+position = Vector2(6.10352e-05, 6.10352e-05)
+scale = Vector2(0.614642, 0.678488)
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-9.76189, 20.7583)
+scale = Vector2(1.53907, 2.08202)
+shape = SubResource("RectangleShape2D_akby8")
+
+[node name="charlie" type="Sprite2D" parent="."]
+position = Vector2(18.9999, -4.00006)
+scale = Vector2(0.322085, 0.310698)
+texture = ExtResource("1_5gqqj")

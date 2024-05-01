@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://behoy5p8ipomx"]
+
+[ext_resource type="PackedScene" uid="uid://c712hpghwdsjw" path="res://Scenes/sara2.tscn" id="1_apkmx"]
+[ext_resource type="PackedScene" uid="uid://dak1fpw31wni5" path="res://Scenes/level1.tscn" id="1_vw0cm"]
+[ext_resource type="PackedScene" uid="uid://cxiudyporjugq" path="res://Scenes/level3.tscn" id="2_0hh7q"]
+[ext_resource type="TileSet" uid="uid://dv5pq4cqkyek7" path="res://Scenes/castle_tileset.tres" id="3_ovjup"]
+[ext_resource type="PackedScene" uid="uid://cbr5k5ify18o4" path="res://Scenes/charlie.tscn" id="5_32iia"]
+[ext_resource type="Script" path="res://Scripts/SpeechBubbleMovement2.gd" id="6_secgp"]
+[ext_resource type="Script" path="res://Scenes/speech bubble text 2.gd" id="7_jcpca"]
+
+[node name="game_node" type="Node2D"]
+
+[node name="sara" parent="." instance=ExtResource("1_apkmx")]
+position = Vector2(1000, 812)
+
+[node name="Level1" parent="." instance=ExtResource("1_vw0cm")]
+position = Vector2(58, 378)
+scale = Vector2(1.04, 1)
+
+[node name="Level3" parent="." instance=ExtResource("2_0hh7q")]
+position = Vector2(1854, 378)
+scale = Vector2(0.999999, 0.999999)
+
+[node name="bg" type="TileMap" parent="."]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(1920, 602)
+tile_set = ExtResource("3_ovjup")
+format = 2
+layer_0/tile_data = PackedInt32Array(1376255, 196608, 10, 1441791, 196608, 11, 1310720, 262144, 10, 1376256, 262144, 11, 1310721, 327680, 10, 1376257, 327680, 11, 1310722, 393216, 10, 1376258, 393216, 11, 1310723, 196608, 10, 1376259, 196608, 11, 1310724, 262144, 10, 1376260, 262144, 11, 1310725, 327680, 10, 1376261, 327680, 11, 1310726, 393216, 10, 1376262, 393216, 11, 1310727, 196608, 10, 1376263, 196608, 11, 1310728, 262144, 10, 1376264, 262144, 11, 1310729, 327680, 10, 1376265, 327680, 11, 1310730, 196608, 10, 1376266, 196608, 11, 1310731, 262144, 10, 1376267, 262144, 11, 1310732, 327680, 10, 1376268, 327680, 11, 1310733, 393216, 10, 1376269, 393216, 11)
+
+[node name="charlie" parent="." instance=ExtResource("5_32iia")]
+position = Vector2(900, 812)
+
+[node name="speech bubble" type="CharacterBody2D" parent="."]
+position = Vector2(443, 382)
+motion_mode = 1
+script = ExtResource("6_secgp")
+
+[node name="speech bubble bg" type="Polygon2D" parent="speech bubble"]
+position = Vector2(-115, -343)
+scale = Vector2(0.794341, 1)
+polygon = PackedVector2Array(189, 240, 490, 239, 508, 252, 508, 292, 494, 301, 188, 300, 175, 289, 174, 252)
+
+[node name="speech bubble text" type="RichTextLabel" parent="speech bubble"]
+offset_left = 43.0
+offset_top = -85.0
+offset_right = 299.0
+offset_bottom = 83.0
+theme_override_colors/default_color = Color(0.278447, 0.549096, 0.748898, 1)
+text = "Move left, Sara."
+script = ExtResource("7_jcpca")
+metadata/_edit_use_anchors_ = true
+
+[node name="speech bubble right arrow" type="Polygon2D" parent="speech bubble"]
+visible = false
+position = Vector2(538.482, 209.53)
+scale = Vector2(0.499396, 0.509341)
+polygon = PackedVector2Array(511.859, 245.466, 499.639, 267.418, 529.509, 286.376, 560.737, 299.348, 548.517, 258.437)
+
+[node name="speech bubble left arrow" type="Polygon2D" parent="speech bubble"]
+position = Vector2(-244, -201)
+scale = Vector2(0.548814, 0.571428)
+polygon = PackedVector2Array(562.176, 264.25, 550.749, 243.25, 516.47, 259, 499.242, 299, 534.753, 287)

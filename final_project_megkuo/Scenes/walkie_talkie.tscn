@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgc7trujvtai7"]
+
+[ext_resource type="Texture2D" uid="uid://c3soqv8y0ygbe" path="res://Art/pixel art/walkie_talkie.png" id="1_irs7j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akby8"]
+size = Vector2(32, 58)
+
+[node name="walkie talkie" type="RigidBody2D"]
+position = Vector2(6.10352e-05, 6.10352e-05)
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6.1512e-05, 0.999939)
+shape = SubResource("RectangleShape2D_akby8")
+
+[node name="walkie talkie" type="Sprite2D" parent="."]
+position = Vector2(-6.10352e-05, 1.99994)
+scale = Vector2(1.3225, 1.16684)
+texture = ExtResource("1_irs7j")
