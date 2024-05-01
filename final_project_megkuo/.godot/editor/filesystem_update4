@@ -1,11 +1,13 @@
-res://Scenes/house demo.tscn
+res://Scenes/level1.tscn
 res://Scripts/CharlieMovement_Button.gd
 res://Scripts/SaraMovement.gd
 res://Scenes/castle_tileset.tres
 res://Scenes/colorful_platformer_tileset.tres
+res://Scenes/house demo.tscn
 res://Scenes/level3.tscn
-res://Scenes/level1.tscn
+res://Scenes/level2.tscn
 res://Scenes/walkie_talkie.tscn
 res://Scenes/game_node.tscn
 res://Scenes/level4.tscn
-res://Scenes/level2.tscn
+res://SaraMovementLevel2.gd
+res://Scenes/speech bubble text level2.gd

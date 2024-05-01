@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://Scripts/CharlieMovement.gd" id="6_djfdd"]
 [ext_resource type="Script" path="res://Scripts/CharlieMovement_Button.gd" id="7_x724o"]
 [ext_resource type="Script" path="res://Scripts/SpeechBubbleMovement2.gd" id="8_hw6i1"]
-[ext_resource type="Script" path="res://Scenes/speech bubble text 2.gd" id="9_0ubr7"]
+[ext_resource type="Script" path="res://Scenes/speech bubble text.gd" id="9_3x1vm"]
 [ext_resource type="PackedScene" uid="uid://c712hpghwdsjw" path="res://Scenes/sara2.tscn" id="9_bnlxv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a313a"]
@@ -119,7 +119,7 @@ offset_right = 299.0
 offset_bottom = 83.0
 theme_override_colors/default_color = Color(0.278447, 0.549096, 0.748898, 1)
 text = "Move left, Sara."
-script = ExtResource("9_0ubr7")
+script = ExtResource("9_3x1vm")
 metadata/_edit_use_anchors_ = true
 
 [node name="speech bubble right arrow" type="Polygon2D" parent="speech bubble"]
@@ -249,8 +249,8 @@ shape = SubResource("RectangleShape2D_hm230")
 [connection signal="button_down" from="OpenDoorButton2" to="StaticBody2D -- door/door" method="_on_open_door_button_button_down"]
 [connection signal="button_up" from="OpenDoorButton2" to="StaticBody2D -- door" method="_on_open_door_button_button_up"]
 [connection signal="button_up" from="OpenDoorButton2" to="StaticBody2D -- door/door" method="_on_open_door_button_button_up"]
-[connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_entered"]
 [connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_entered"]
+[connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_entered"]
 [connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door/door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_exited"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_exited"]

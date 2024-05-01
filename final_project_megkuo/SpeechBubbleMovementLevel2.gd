@@ -11,7 +11,7 @@ var visibility_timer = 0
 
 func _ready():
 	var root_node = get_parent()
-	var child_two = root_node.get_node("charlie")
+	var child_two = root_node.get_node("sara2")
 	#var child_two_child = child_two.get_node("Child_Two_Child")
 	
 	var child_two_position = child_two.global_position
@@ -22,7 +22,7 @@ func _ready():
 func _physics_process(delta):
 	var root_node = get_parent()
 	#print("AHHH")
-	var child_two = root_node.get_node("charlie")
+	var child_two = root_node.get_node("sara2")
 	#var child_two_child = child_two.get_node("Child_Two_Child")
 	var child_two_position = child_two.global_position
 	
@@ -60,5 +60,8 @@ func _on_stay_button_button_down():
 func _on_crouch_button_button_down():
 	visibility_timer = 100
 	pass # Replace with function body.
-	
 
+
+func _on_sara_2_stopped():
+	visibility_timer = 100
+	pass # Replace with function body.
