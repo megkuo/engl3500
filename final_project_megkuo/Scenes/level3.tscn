@@ -1,5 +1,6 @@
-[gd_scene load_steps=24 format=3 uid="uid://cxiudyporjugq"]
+[gd_scene load_steps=29 format=3 uid="uid://cxiudyporjugq"]
 
+[ext_resource type="Script" path="res://Scenes/level3.gd" id="1_l3f7u"]
 [ext_resource type="TileSet" uid="uid://dv5pq4cqkyek7" path="res://Scenes/castle_tileset.tres" id="1_t3w5q"]
 [ext_resource type="Script" path="res://Scripts/DoorCollisionController.gd" id="2_hfiso"]
 [ext_resource type="Texture2D" uid="uid://bcj18f1u388bl" path="res://Art/TileMap_SF/tileset_sf.png" id="3_dcm17"]
@@ -15,6 +16,7 @@
 [ext_resource type="Script" path="res://Scenes/CameraFollowSara.gd" id="13_gssho"]
 [ext_resource type="Script" path="res://Scenes/charlie_part.gd" id="14_psov2"]
 [ext_resource type="PackedScene" uid="uid://b8pouoja0l8yk" path="res://Scenes/charlie_lying_down.tscn" id="15_obtm2"]
+[ext_resource type="Script" path="res://Scenes/NextLevelArea2D2.gd" id="17_cokbo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a313a"]
 size = Vector2(64, 64)
@@ -1861,8 +1863,18 @@ size = Vector2(178, 43)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ikcc7"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4acqb"]
+bg_color = Color(0, 0.32549, 0.0470588, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qi3rq"]
+size = Vector2(25.9953, 17.8618)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m70p8"]
+size = Vector2(242.704, 80.5)
+
 [node name="Level3" type="Node2D"]
 position = Vector2(59, 354)
+script = ExtResource("1_l3f7u")
 
 [node name="bg" type="TileMap" parent="."]
 light_mask = 3
@@ -2050,6 +2062,29 @@ scale = Vector2(0.849395, 0.832544)
 physics_material_override = SubResource("PhysicsMaterial_ikcc7")
 gravity_scale = 0.945
 
+[node name="NextLevelButton" type="Button" parent="."]
+offset_left = 1736.0
+offset_top = 1222.0
+offset_right = 1934.0
+offset_bottom = 1265.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4acqb")
+text = "Stand Here for Next Level"
+
+[node name="NextLevelArea2D2" type="Area2D" parent="NextLevelButton"]
+scale = Vector2(1.08, 1)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("17_cokbo")
+
+[node name="NextLevelCollisionShape2D2" type="CollisionShape2D" parent="NextLevelButton/NextLevelArea2D2"]
+position = Vector2(137.037, -712.5)
+scale = Vector2(9.39667, 4.67477)
+shape = SubResource("RectangleShape2D_qi3rq")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="NextLevelButton/NextLevelArea2D2"]
+position = Vector2(138.746, -715)
+shape = SubResource("RectangleShape2D_m70p8")
+
 [connection signal="button_down" from="LeftButton" to="sara" method="_on_left_button_button_down"]
 [connection signal="button_down" from="LeftButton" to="speech bubble" method="_on_left_button_button_down"]
 [connection signal="button_down" from="LeftButton" to="speech bubble/speech bubble text" method="_on_left_button_button_down"]
@@ -2082,9 +2117,10 @@ gravity_scale = 0.945
 [connection signal="button_down" from="OpenDoorButton2" to="StaticBody2D -- door/door" method="_on_open_door_button_button_down"]
 [connection signal="button_up" from="OpenDoorButton2" to="StaticBody2D -- door" method="_on_open_door_button_button_up"]
 [connection signal="button_up" from="OpenDoorButton2" to="StaticBody2D -- door/door" method="_on_open_door_button_button_up"]
-[connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_entered"]
+[connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door/door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_exited"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_exited"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door/door" method="_on_open_door_area_2d_body_exited"]
+[connection signal="body_entered" from="NextLevelButton/NextLevelArea2D2" to="." method="_on_next_level_area_2d_2_body_entered"]

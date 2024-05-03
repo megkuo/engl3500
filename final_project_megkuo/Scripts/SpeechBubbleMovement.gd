@@ -20,7 +20,7 @@ func _ready():
 	
 	
 func _physics_process(delta):
-	print(visibility_timer)
+	#print(visibility_timer)
 	var root_node = get_parent()
 	#print("AHHH")
 	var child_two = root_node.get_node("sara")
@@ -30,7 +30,7 @@ func _physics_process(delta):
 	
 	if visibility_timer > 0: # counts down how long the bubble appears for
 		visibility_timer -= 1
-		print(visibility_timer)
+		#print(visibility_timer)
 		self.visible = true
 	
 	if visibility_timer == 0:

@@ -1,6 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://bhsjjdxy70huh"]
+[gd_scene load_steps=20 format=3 uid="uid://bhsjjdxy70huh"]
 
 [ext_resource type="TileSet" uid="uid://dv5pq4cqkyek7" path="res://Scenes/castle_tileset.tres" id="1_44atf"]
+[ext_resource type="Script" path="res://Scenes/level2.gd" id="1_trebl"]
 [ext_resource type="Script" path="res://Scripts/DoorCollisionController.gd" id="2_ur8i1"]
 [ext_resource type="Texture2D" uid="uid://b73jw57phqeh1" path="res://Art/tilesets/Terrain (32x32).png" id="2_xokoj"]
 [ext_resource type="Script" path="res://Scenes/door.gd" id="3_yo6qb"]
@@ -1541,8 +1542,9 @@ size = Vector2(19.4732, 10.9096)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hm230"]
 size = Vector2(178, 43)
 
-[node name="Level1" type="Node2D"]
+[node name="Level2" type="Node2D"]
 position = Vector2(59, 354)
+script = ExtResource("1_trebl")
 
 [node name="bg2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4jjep")
@@ -1594,7 +1596,7 @@ horizontal_air_coefficient = 0.5
 speed_limit = 400.0
 friction = 0.2
 
-[node name="sara2" parent="." instance=ExtResource("6_t26aw")]
+[node name="sara" parent="." instance=ExtResource("6_t26aw")]
 position = Vector2(119, 434)
 collision_layer = 2
 collision_mask = 2
@@ -1738,28 +1740,28 @@ shape = SubResource("RectangleShape2D_1twvc")
 position = Vector2(90, 21.5)
 shape = SubResource("RectangleShape2D_hm230")
 
-[connection signal="moving" from="charlie" to="sara2" method="_on_charlie_moving"]
-[connection signal="stopped" from="sara2" to="speech bubble" method="_on_sara_2_stopped"]
-[connection signal="button_down" from="LeftButton" to="sara2" method="_on_left_button_button_down"]
+[connection signal="moving" from="charlie" to="sara" method="_on_charlie_moving"]
+[connection signal="stopped" from="sara" to="speech bubble" method="_on_sara_2_stopped"]
+[connection signal="button_down" from="LeftButton" to="sara" method="_on_left_button_button_down"]
 [connection signal="button_down" from="LeftButton" to="speech bubble" method="_on_left_button_button_down"]
 [connection signal="button_down" from="LeftButton" to="speech bubble/speech bubble text" method="_on_left_button_button_down"]
-[connection signal="button_up" from="LeftButton" to="sara2" method="_on_left_button_button_up"]
-[connection signal="button_down" from="RightButton" to="sara2" method="_on_right_button_button_down"]
+[connection signal="button_up" from="LeftButton" to="sara" method="_on_left_button_button_up"]
+[connection signal="button_down" from="RightButton" to="sara" method="_on_right_button_button_down"]
 [connection signal="button_down" from="RightButton" to="speech bubble" method="_on_right_button_button_down"]
 [connection signal="button_down" from="RightButton" to="speech bubble/speech bubble text" method="_on_right_button_button_down"]
-[connection signal="button_up" from="RightButton" to="sara2" method="_on_right_button_button_up"]
-[connection signal="button_down" from="JumpButton" to="sara2" method="_on_jump_button_button_down"]
+[connection signal="button_up" from="RightButton" to="sara" method="_on_right_button_button_up"]
+[connection signal="button_down" from="JumpButton" to="sara" method="_on_jump_button_button_down"]
 [connection signal="button_down" from="JumpButton" to="speech bubble" method="_on_jump_button_button_down"]
 [connection signal="button_down" from="JumpButton" to="speech bubble/speech bubble text" method="_on_jump_button_button_down"]
-[connection signal="button_up" from="JumpButton" to="sara2" method="_on_jump_button_button_up"]
-[connection signal="button_down" from="StayButton" to="sara2" method="_on_stay_button_button_down"]
+[connection signal="button_up" from="JumpButton" to="sara" method="_on_jump_button_button_up"]
+[connection signal="button_down" from="StayButton" to="sara" method="_on_stay_button_button_down"]
 [connection signal="button_down" from="StayButton" to="speech bubble" method="_on_stay_button_button_down"]
 [connection signal="button_down" from="StayButton" to="speech bubble/speech bubble text" method="_on_stay_button_button_down"]
-[connection signal="button_up" from="StayButton" to="sara2" method="_on_stay_button_button_up"]
-[connection signal="button_down" from="CrouchButton" to="sara2" method="_on_crouch_button_button_down"]
+[connection signal="button_up" from="StayButton" to="sara" method="_on_stay_button_button_up"]
+[connection signal="button_down" from="CrouchButton" to="sara" method="_on_crouch_button_button_down"]
 [connection signal="button_down" from="CrouchButton" to="speech bubble" method="_on_crouch_button_button_down"]
 [connection signal="button_down" from="CrouchButton" to="speech bubble/speech bubble text" method="_on_crouch_button_button_down"]
-[connection signal="button_up" from="CrouchButton" to="sara2" method="_on_crouch_button_button_up"]
+[connection signal="button_up" from="CrouchButton" to="sara" method="_on_crouch_button_button_up"]
 [connection signal="button_down" from="OpenDoorButton" to="StaticBody2D -- door" method="_on_open_door_button_button_down"]
 [connection signal="button_down" from="OpenDoorButton" to="StaticBody2D -- door/door" method="_on_open_door_button_button_down"]
 [connection signal="button_up" from="OpenDoorButton" to="StaticBody2D -- door" method="_on_open_door_button_button_up"]
@@ -1772,8 +1774,8 @@ shape = SubResource("RectangleShape2D_hm230")
 [connection signal="button_down" from="OpenDoorButton2" to="StaticBody2D -- door/door" method="_on_open_door_button_button_down"]
 [connection signal="button_up" from="OpenDoorButton2" to="StaticBody2D -- door" method="_on_open_door_button_button_up"]
 [connection signal="button_up" from="OpenDoorButton2" to="StaticBody2D -- door/door" method="_on_open_door_button_button_up"]
-[connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_entered"]
+[connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door/door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_exited"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_exited"]
