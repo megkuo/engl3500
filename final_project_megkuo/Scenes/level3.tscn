@@ -1988,8 +1988,6 @@ text = "crouch
 
 [node name="Crate" parent="." instance=ExtResource("11_28xo6")]
 position = Vector2(870, 507)
-collision_layer = 3
-collision_mask = 3
 physics_material_override = SubResource("PhysicsMaterial_1h0ru")
 gravity_scale = 1.0
 script = ExtResource("12_itxkr")
@@ -2004,8 +2002,6 @@ text = "Stand Here to Open Door"
 
 [node name="OpenDoorArea2D" type="Area2D" parent="OpenDoorButton"]
 scale = Vector2(1.08, 1)
-collision_layer = 3
-collision_mask = 3
 
 [node name="OpenDoorCollisionShape2D" type="CollisionShape2D" parent="OpenDoorButton/OpenDoorArea2D"]
 position = Vector2(89.5083, 18.5)
@@ -2086,8 +2082,8 @@ gravity_scale = 0.945
 [connection signal="button_down" from="OpenDoorButton2" to="StaticBody2D -- door/door" method="_on_open_door_button_button_down"]
 [connection signal="button_up" from="OpenDoorButton2" to="StaticBody2D -- door" method="_on_open_door_button_button_up"]
 [connection signal="button_up" from="OpenDoorButton2" to="StaticBody2D -- door/door" method="_on_open_door_button_button_up"]
-[connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_entered"]
 [connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_entered"]
+[connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_entered"]
 [connection signal="body_entered" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door/door" method="_on_open_door_area_2d_body_entered"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_body_exited"]
 [connection signal="body_exited" from="OpenDoorButton2/OpenDoorArea2D2" to="StaticBody2D -- door" method="_on_open_door_area_2d_2_body_exited"]

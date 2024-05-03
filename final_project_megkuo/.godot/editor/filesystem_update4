@@ -5,4 +5,7 @@ res://Scenes/castle_tileset.tres
 res://Scenes/level2.tscn
 res://Scenes/level3.tscn
 res://Scenes/level4.tscn
-res://Scenes/game_node.tscn
+res://Scenes/crate.gd
+res://Scenes/charlie_part.gd
+res://Scripts/CharlieMovement.gd
+res://Scenes/walkie_talkie.gd

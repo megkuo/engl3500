@@ -27,8 +27,8 @@ func _pick_up():
 	#print("floor:", is_on_floor())
 	if character_nearby() and not follow: # and is_on_floor():
 		follow = true
-		collision_layer = 0
-		collision_mask = 0
+		collision_layer = 1
+		collision_mask = 1
 	
 	elif character_nearby() and follow: # and is_on_floor():
 		follow = false
@@ -55,7 +55,7 @@ func character_nearby():
 	#print(distance)
 	
 	if distance < 120:
-		print("true")
+		#print("true")
 		return true
 		
 	else:
