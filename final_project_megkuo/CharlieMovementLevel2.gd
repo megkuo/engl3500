@@ -12,6 +12,7 @@ var amount_moved = 0
 @export var friction : float ## What friction should they experience on the ground?
 
 signal moving 
+signal stopped 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -38,6 +39,8 @@ func _get_input(delta):
 				moving.emit()
 				#print("EMITTING")
 			#print(movement_speed)
+			else:
+				stopped.emit()
 			amount_moved -= 1.5
 			
 			

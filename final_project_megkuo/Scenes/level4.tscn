@@ -2020,6 +2020,7 @@ speed_limit = 800.0
 friction = 0.2
 
 [node name="charlie_injured" parent="." instance=ExtResource("7_j4eqq")]
+position = Vector2(695, 451)
 motion_mode = 0
 script = ExtResource("6_yerih")
 jump_height = 300.0

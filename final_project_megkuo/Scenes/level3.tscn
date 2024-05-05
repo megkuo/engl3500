@@ -2063,6 +2063,7 @@ physics_material_override = SubResource("PhysicsMaterial_ikcc7")
 gravity_scale = 0.945
 
 [node name="NextLevelButton" type="Button" parent="."]
+visible = false
 offset_left = 1736.0
 offset_top = 1222.0
 offset_right = 1934.0

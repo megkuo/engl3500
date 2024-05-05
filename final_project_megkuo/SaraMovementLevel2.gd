@@ -106,7 +106,7 @@ func _physics_process(delta):
 	_crouch_check()
 	
 	if distance - counter > 0 and move:
-		print(global_position)
+		#print(global_position)
 		npc_movement()
 	elif move:
 		velocity = Vector2(0,0)

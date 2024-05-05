@@ -1634,7 +1634,7 @@ offset_top = -85.0
 offset_right = 299.0
 offset_bottom = 83.0
 theme_override_colors/default_color = Color(0.278447, 0.549096, 0.748898, 1)
-text = "Charlie?"
+text = "Charlie? "
 script = ExtResource("10_ldb12")
 metadata/_edit_use_anchors_ = true
 
@@ -1741,7 +1741,9 @@ position = Vector2(90, 21.5)
 shape = SubResource("RectangleShape2D_hm230")
 
 [connection signal="moving" from="charlie" to="sara" method="_on_charlie_moving"]
+[connection signal="stopped" from="charlie" to="speech bubble/speech bubble text" method="_on_charlie_stopped"]
 [connection signal="stopped" from="sara" to="speech bubble" method="_on_sara_2_stopped"]
+[connection signal="next_level" from="speech bubble/speech bubble text" to="." method="_on_speech_bubble_text_next_level"]
 [connection signal="button_down" from="LeftButton" to="sara" method="_on_left_button_button_down"]
 [connection signal="button_down" from="LeftButton" to="speech bubble" method="_on_left_button_button_down"]
 [connection signal="button_down" from="LeftButton" to="speech bubble/speech bubble text" method="_on_left_button_button_down"]
